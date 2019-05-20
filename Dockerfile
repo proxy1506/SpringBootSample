@@ -28,7 +28,7 @@ COPY    target/myproject-0.0.1-SNAPSHOT.jar /tmp
 
 VOLUME	["/sys/fs/cgroup"]
 VOLUME  ["/usr/java/jdk1.8.0_141"]
-EXPOSE 	8081
+EXPOSE 	8080:8080
 CMD 	["/bin/bash"] 
 
 ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /tmp/myproject-0.0.1-SNAPSHOT.jar" ]
