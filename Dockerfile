@@ -22,7 +22,7 @@ RUN 	yum -y --nogpgcheck install wget which && \
 		wget https://storage.googleapis.com/devops_docker_vol/certificates/cacerts -O /usr/java/jdk1.8.0_161/jre/lib/security/cacerts && \
 		yum -y remove wget && rm -rf /tmp/devops && yum clean all && rm -rf /var/cache/yum/* && \
 		cd /tmp && rm -rf devops && rm -rf myproject-0.0.1-SNAPSHOT.jar
-WORKDIR "/var/lib/jenkins/workspace/Project1"
+
 COPY    target/myproject-0.0.1-SNAPSHOT.jar /tmp
         
 
