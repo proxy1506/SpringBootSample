@@ -9,7 +9,7 @@ public class Example {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World - v3! Testing Dockerizing Jenkins pipeine";
+        return "Hello World - v3! Testing Dockerizing Jenkins pipeine 1";
     }
 
     public static void main(String[] args) throws Exception {
