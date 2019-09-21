@@ -4,7 +4,7 @@ node {
 	     checkout scm
 	  }
 	  stage('Build Image'){
-	   app=docker.build("proxy1506/poject1img")
+	   app=docker.build("poject1img")
       }
 	  stage('Push Image'){
 	    docker.withRegistry('https://registry.hub.docker.com','proxy1506') {
